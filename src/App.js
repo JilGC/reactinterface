@@ -23,8 +23,6 @@ function App() {
         }
       </ul>
 
-      <function />
-
       <Search />
     </div>
   );
