@@ -39,6 +39,7 @@ function App() {
         <BiCalendar className="inline-flex text-red-400 align-top" />This is a reactApp</h1>
 
       <AddAppointment />
+
       <Search query={query}
         onQueryChange={myQuery => setQuery(myQuery)} />
 
@@ -50,7 +51,7 @@ function App() {
               onDeleteAppointment={
                 appointmentId =>
                   setAppointmentList(appointmentList.filter(appointment =>
-                    appointment.id === appointmentId))
+                    appointment.id !== appointmentId))
               }
             />
           ))
