@@ -15,7 +15,7 @@ function App() {
       return (
         item.petName.toLowerCase().includes(query.toLowerCase()) ||
         item.ownerName.toLowerCase().includes(query.toLowerCase()) ||
-        item.aptName.toLowerCase().includes(query.toLowerCase())
+        item.aptNotes.toLowerCase().includes(query.toLowerCase())
 
       )
     }
